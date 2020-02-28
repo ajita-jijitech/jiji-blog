@@ -6,7 +6,6 @@ author: ajita
 description: Information Needed
 tags: [Security,Privacy]
 image: https://jijitechnologies.com/blogs/content/image/hourly-gantt-chart-task-assignment-for-microsoft-planner-tasks/banner-hourly-chart-gantt-main.png
-paginate: true
 ---
 
 This app will collect following basic and planner data: 
@@ -14,8 +13,6 @@ This app will collect following basic and planner data:
 Logged-in user' e-mail Id. 
 
 All Office 365 Groups in which the logged-in user is member of. 
-
---page-break--
 
 All Plans associated with the groups. 
 
