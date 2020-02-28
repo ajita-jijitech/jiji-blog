@@ -48,7 +48,7 @@
                 {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" | where_exp:"post","post.date <= page.date" %}
                 {% if next_posts.first and next_posts.size > 1 %}
                     <div style="flex: 0 0 25%;text-align: center;"><a href="{{ next_posts.first.url | prepend: site.baseurl}}">
-                        <span class="text">{{ site.translations.pagination.next_post | default: "Next Post" }} <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
+                        <span class="text">{{ site.translations.pagination.next_post | default: "Next Post" }} <svg class="arrow next"><use xlink:href="#icon-arrow-right"></use></svg></span>
                     </a></div>
                 {% endif %}
             </div>
