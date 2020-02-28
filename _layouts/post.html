@@ -44,7 +44,7 @@
                         <span class="text"><svg class="arrow"><use xlink:href="#icon-arrow-left"></use></svg>{{ site.translations.pagination.next_post | default: "Previous Post" }} </span>
                     </a></div>
                 {% endif %}
-                <div style="flex: 0 0 50%"></div>
+                <div style="flex: 0 0 30%"></div>
                 {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" | where_exp:"post","post.date <= page.date" %}
                 {% if next_posts.first and next_posts.size > 1 %}
                     <div style="flex: 0 0 25%;text-align: center;"><a href="{{ next_posts.first.url | prepend: site.baseurl}}">
